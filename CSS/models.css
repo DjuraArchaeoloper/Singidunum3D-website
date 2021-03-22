@@ -1,0 +1,70 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+#main-models {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  background-color: #897853;
+  background-image: url("../Images/7.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  align-content: space-around;
+  justify-content: space-around;
+}
+
+#main-models .sketchfab-embed-wrapper iframe {
+  margin: 10px 5px 10px 5px;
+  border-radius: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.navbar-brand {
+  font-family: 'Architects Daughter', cursive;
+}
+
+.navbar {
+  margin: 5px 10px 10px 0;
+  border-radius: 20px;
+  float: right;
+  position: fixed;
+  z-index: 1;
+  right: 0;
+  top: 10px;
+}
+
+#footer {
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 0;
+}
+
+#footer::before {
+  content: "";
+  background-image: url("../Images/7.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+#footer p {
+  padding: 5px;
+  margin: 5px auto 5px auto;
+  color: #897853;
+  width: 30%;
+  background-color: #212529;
+  border-radius: 20px;
+  font-size: 10px;
+}

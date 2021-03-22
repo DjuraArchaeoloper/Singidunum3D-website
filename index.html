@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Singidunum 3D</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" href="CSS/index.css" type="text/css">
+  <link rel="icon" href="images/photograph.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div id="header">
+    <div class="navbar">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark navigation">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Singidunum3D</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
+            aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbar">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#header">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#main">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./models.html">3D models</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="title">
+      <h2>Archaeological Heritage of Singidunum <br /> A 3D/Virtual Perspective of the Belgrade city Museum.</h2>
+    </div>
+
+    <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="7000"
+      data-pause="false">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <video class="d-block w-100" controls autoplay muted loop>
+            <source src="Images/Konj.mkv" type="video/mp4" alt="First slide">
+          </video>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="Images/1.png" alt="Second slide">
+        </div>
+        <div class="carousel-item">
+          <video class="d-block w-100" controls autoplay muted loop>
+            <source src="Images/Reljef.mp4" type="video/mp4" alt="Third slide">
+          </video>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="Images/3.png" alt="Fourth slide">
+        </div>
+        <div class="carousel-item">
+          <video class="d-block w-100" controls autoplay muted loop>
+            <source src="Images/Zizak.mp4" type="video/mp4" alt="Fifth slide">
+          </video>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only"></span>
+      </a>
+      <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only"></span>
+      </a>
+    </div>
+  </div>
+
+  <div id="main">
+    <h2>The future of experiencing the past</h2>
+    <p>The global call for curators to digitize their collections was the fire which, on September 2nd, 2018, destroyed
+      a great part of the collections in the National Museum in Brazil. Throughout the globe, curators have woken up and
+      started to plan how to digitize the historical and archaeological collections, which implies, not only the
+      archiving and the help of spreading information about heritage, but also creating of digital collections which can
+      be printed in a 3D format and used as “surrogates”, in the case of the original ones being destroyed. Besides the
+      most significant world institutions such as the British Museum and the Smithsonian Institute, and thanks to the
+      availability of new technologies, it is more common that even smaller museums can now start their projects of
+      virtualizing their collections.
+      <br>
+      <br>
+      <span id="dots"></span><span id="more"> One such venture was started by the Belgrade city Museum through the
+        project Singidunum 3D which encompassed the digitization of Singidunum’s antique heritage, a Roman city that was
+        built on the place where Belgrade stands today. In the first phase of the project, 3D models of stone monuments
+        with Latin inscriptions were made, which are located in the city parks of Belgrade, unmarked and extremely vague
+        to the audience. In time, we have started the production of 3D models of smaller objects, parts of stone
+        sculptures and bronze artifacts, and we even reconstructed some of them, showing their former appearance. While
+        modeling, we have been relying on the IBM method (Image based modeling), which enables a photorealistic display
+        of the object while their geometry was being fixed with the help of computer technologies. In this way, 3D
+        models of high precision were achieved, realistic enough to draw the attention of the broad public but also
+        geometrically accurate enough to satisfy the needs of interested scholars. That was precisely our aim, to gain
+        new archive data for the Museum, which can be upgraded in the future with virtual reality experiences for the
+        public, but also digital replicas which scholars can use in a digital surrounding, regardless of the boundaries
+        and without the actual contact with the archaeological objects which are often sensitive and fragile.
+        <br>
+        <br>
+        This is our way of popularizing the culture heritage of Singidinum.
+        The 3D models from the Belgrade city Museum’s antique collection can be seen on the platform:
+        https://sketchfab.com/Singidunum3D/models
+
+        <br>
+        <br>
+        The leader of the project, as a part of the Belgrade city Museum staff, is Milorad Ignjatović, the Antique
+        collection’s curator, with the help of young associates, archaeologist Jugoslav Pendić and MA archaeologist
+        Đurađ Đurić, and the support from the Ministry of Culture and Information of the Republic of Serbia.</span>
+    </p>
+    <button onclick="readMore()" id="myBtn">Read more</button>
+  </div>
+
+  <div id="footer">
+    <a href="https://sketchfab.com/Singidunum3D/models" target="_blank" title="Sketchfab">
+      <img src="Images/sketchfab.jpg" style="border-radius: 50%; height: 40px; width: 40px; margin: 5px 5px 0 0;" />
+    </a>
+    <a href="http://www.mgb.org.rs/" target="_blank" title="MGB">
+      <img src="Images/logoMGB_mali.png" style="border-radius: 30%; height: 40px; width: 40px; margin: 5px 0 0 5px;" />
+    </a>
+    <p>Copyright by Singidunum 3D&#169 2021</p>
+  </div>
+
+  <!-- Bootstrap Scripts and Index.js-->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
+  </script>
+  <script src="./index.js"></script>
+</body>
+
+</html>
